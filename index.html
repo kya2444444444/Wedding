@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- link font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Playwrite+DE+Grund:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- agar tersambung ke style.css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Halaman pertama website ini -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        <div>
+            <h4>The<br>Wedding</h4>
+            <h1>Aella & Ijay</h1>
+            <h5>09 . 10 . 2025</h5>
+            <a href="#home" class="btn mt-4">Buka Undangan</a>
+        </div>
+    </section>
+
+    <!-- menu navbar, di sini saya ngikutin tutor yg ada di yt -->
+     <section id="undangan">
+    <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar"> 
+    <a class="navbar-brand" href="#">Ael & Jay</a> <!-- Yang ini cuma nama atau judul dari navbarnya saja -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Nah, di sini ada offcanvas yang dimana kalo kita kecilin layar menu yang tadinya berupa tulisan jadi garis tiga, dan kalo di klik bakal muncul di sebelah kanan layar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ael & Jay</h5> <!-- Yang ini cuma nama atau judul dari navbarnya saja -->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <!-- Ini dia menunya nav-link, kalo kita klik bakal berpindah tempat, ke tempat yang udah ditentuin -->
+      <div class="offcanvas-body">
+        <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#undangan">Home</a>
+        <a class="nav-link" href="#location">Location</a>
+        <a class="nav-link" href="#Ayat">Ayat</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</section>
+
+<!-- halaman kedua setelah halaman paling utama, disini navbar mulai berfungsi -->
+<section id="home" class="home"> <!-- section berguna untuk nav-link tadi -->
+    <div class="container justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-centers">
+                <h2>Acara Pernikahan</h2>
+                <h3>Diselanggarakan pada 9 Oktober 2025 di Batam, Kepulauan Riau.</h3>
+                <p>Oleh karena itu, dengan segala hormat, kami bermaksud mengundang bapak/ibu, saudara/i, untuk pada acara pernikahan kami.</p>
+            </div>
+        </div>
+        <div class="row couple">
+            <!-- Mempelai laki-laki -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-8 text-end"> 
+                        <h3>Ijay kaevian</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quod maxime quasi.</p>
+                        <p>Putra dari Bpk. Lorem <br> dan <br> ibu Lorem</p>
+                    </div>
+                    <div class="col-4">
+                    <img src="img/laki.png" alt="Ijay Kaevian" class="img-responsive rounded-circle">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mempelai perempuan -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/wanita.png" alt="Aella Arastiael" class="img-responsive rounded-circle">
+                        </div>
+                    <div class="col-8 text-start"> 
+                        <h3>Aella Arastiael</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quod maxime quasi.</p>
+                        <p>Putri dari Bpk. Ipsum <br> dan <br> ibu Ipsum</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location" class="location">
+    <div class="container justify-content-center">
+        <div class="row">
+            <div class="col-md-8 col-10 text-center">
+                <h2>Lokasi Acara</h2>
+                <p class="acara">
+                    Jl. Kuda Laut No.kavling 121, Sungai Jodoh, Kec. Batu Ampar, Kota Batam, Kepulauan Riau.
+                </p>
+                <iframe class="linkmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.000243085242!2d104.00486749999999!3d1.1602876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98a1fca0d8197%3A0xd49ddcce7b4df20d!2sSMK%20Multistudi%20High%20School%20Batam!5e0!3m2!1sid!2sid!4v1759667141704!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <a class="btn btn-md mt-4" href="https://maps.app.goo.gl/YGAyZmyCQaUhN5Up6" target="_blank">Google Map</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Ayat" class="ayatimg">
+<div class="ayat">
+    <p class="ayat1">QS. Ar-Rum Ayat 21</p>
+    <p class="ayat2">Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu 
+        dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. 
+        Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+    </p>
+</div>
+</section>
+
+<!-- audio -->
+<section class="music-section">
+      <h2>🎵 Pemutar Musik</h2>
+      <audio id="music" src="audio/wedding song.mp3" controls></audio>
+      <div class="music-buttons">
+      </div>
+    </section>
+
+<!-- footer -->
+ <section class="footer">
+    <div class="bgf">
+        <h1>Terima Kasih</h1>
+        <p>Kehadiran Bapak/Ibu merupakan suatu kerhormatan bagi kami, mohon doa dan restu.</p>
+    </div>
+ </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+    </body>
+</html>
