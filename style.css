@@ -1,0 +1,251 @@
+:root {
+  --blue: #2b5288;
+  --bg: #e5e0d9;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 2050px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/prewed.png);
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+.hero h4,
+.hero h1,
+.hero h5 {
+  text-shadow: var(--shadow);
+}
+.hero h4 {
+  font-size: 1.7rem;
+}
+.hero h1 {
+  font-family: "Meddon", cursive;
+  font-size: 4rem;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.hero h5 {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--bg);
+  background-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+.hero a:hover {
+  color: var(--blue);
+  background-color: var(--bg);
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Meddon", cursive;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(img/bg-wedd.png);
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -4rem;
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.home h2 {
+  color: var(--blue);
+  font-family: "Meddon", cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+.home h3 {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.home p {
+  color: #5a5959;
+  font-size: 15px;
+}
+
+.home .couple {
+  margin-top: 50px;
+}
+.home .couple h3 {
+  font-family: "Meddon", cursive;
+  font-size: 1.7rem;
+  color: var(--blue);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.location {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  padding-top: 7.5rem;
+  padding-left: 25%;
+  padding-bottom: 3rem;
+  background-color: var(--bg);
+}
+
+.location h2 {
+  font-family: "Meddon", cursive;
+  color: var(--blue);
+  font-size: 1.9rem;
+}
+
+.location p {
+  font-size: 15px;
+  color: #444;
+}
+
+.location a {
+  color: var(--bg);
+  background-color: var(--blue);
+  box-shadow: var(--shadow);
+  padding-top: 5px;
+}
+.location a:hover {
+  color: white;
+  background-color: var(--blue);
+}
+
+.location .linkmap {
+  width: 340px;
+  height: 290px;
+  box-shadow: var(--shadow);
+}
+
+.ayatimg {
+  background-image: url(img/prewedbg.png);
+  color: var(--bg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.ayat {
+  margin-right: 60px;
+  text-align: end;
+  padding: 5px;
+  padding-top: 10px;
+}
+.ayat1,
+.ayat2 {
+  font-family: "Work Sans", sans-serif;
+  direction: ltr;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* footer */
+.bgf {
+  height: 100vh;
+  background-image: url(img/wedd\ photo2.jpeg);
+  filter: grayscale();
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bgf h1 {
+  font-weight: bold;
+  font-family: "Meddon" cursive;
+  font-size: 40px;
+  margin-top: 45px;
+  margin-inline: auto;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: var(--shadow);
+}
+.bgf p {
+  font-weight: 800;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-inline: auto;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: var(--shadow);
+}
+
+.music-section {
+  text-align: center;
+  background-color: var(--bg);
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  /* 
+    .sticky-top {
+        overflow: hidden;
+    } */
+
+  .mynavbar .nav-link {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+/* handphone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}
